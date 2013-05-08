@@ -225,4 +225,4 @@ http://resources.arcgis.com/en/help/main/10.1/index.html#//001500000035000000
   'Z Domain': {'keyword': 'GPZDomain',  'description': 'A range of lowest and highest possible values for z coordinates.'}}
         return types
 
-datatype = DataType()
+dt = DataType()
