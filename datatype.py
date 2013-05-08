@@ -44,6 +44,9 @@ class DataType(object):
 
         # only continue if we have a recognized type
         if type_of is not None:
+            # Versions prior to 10.1SP1 need labels not keywords. 10.0
+            # doesn't have Python toolboxes, so this isn't really needed
+            # for versions prior to 10.1
             if (self.version == '10.0') or \
                     (self.version == 10.1 and self.service_pack == 'N/A'):
                 if type_of == 'keyword':
